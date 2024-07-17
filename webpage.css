@@ -3,7 +3,7 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, sans-serif;
 }
 header{
        background-color: white;
@@ -37,12 +37,10 @@ header{
     padding-top: 60px;
 }
 .box{
-    background-color: black;
-    width: 23%;
-    height:200px;
-    margin:10px;
-    display: inline-block;
-    justify-content: space-around;
+  
+    width: 25%;
+     float:left;
+     padding: 5px;
 
 }
 .about{
@@ -56,13 +54,20 @@ header{
 
 }
 .people{
-    background-color: black;
-    width:100%;
-    height:0px;
+  
+    height:500px;
     display:inline-block;
-    margin:5px;
+    width:300px;
     text-align: left;
+    
+}
+.upper{
+    height:40%;
 
+}
+.lower{
+    height:60%;
+   
 }
 #btc{
     color:black;
@@ -77,23 +82,11 @@ header{
     padding: 20px;
     font-size: 18px;
     padding-top: 60px;
+    padding-bottom: 10px;
 }
-#or { 
-    display: flex; 
-    flex-direction: row; 
-    color:grey;
-    font-size: 11px;
-   padding-bottom: 0%;
-} 
-  
-#or:before, 
-#or:after { 
-    content: ""; 
-    flex: 1 1; 
-    border-bottom: 1px solid grey; 
-    margin: auto; 
-    
-} 
+hr{
+    margin-bottom:50px;
+}
 input{
     width:1200px;
     padding:13px;
@@ -106,11 +99,11 @@ input{
 }
 .map{
     background-color: white;
-    height:100%;
+    height:85%;
 }
 footer{
     background-color: black;
-    height:80%;
+    height:100px;
     width:100%;
     padding:30px;
     font-size: 15px;
