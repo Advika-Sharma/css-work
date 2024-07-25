@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //array -int , string ,boolean, float (can store non homogenous data)
+        let a=[10,20,30,"mohit",1.5]
+        //console.log(a[2])
+        //for (let i of a){
+        //    console.log(i)
+        //}
+
+        //for (let i in a){
+        //    console.log(a[i])
+        //}
+
+        //a.forEach((item,indexing)=>{
+        //    console.log(item,indexing)
+        //})
+
+
+        //array methods
+        //push
+        //pop
+        //shift
+        //unshift
+        //slice
+        //splice
+        //map***
+        //filter
+        //reduce
+        //flat-concert 2d or 3d array into 1d array
+        //split-string to arry
+        //join-array to string
+        //length
+
+
+       // 1. push() - add element at the end of the array
+
+       a.push("ankit")
+       console.log(a)
+
+       // 2.pop() - delete element at the end of the array
+       a.pop()
+       console.log(a)
+
+       // 3. unshift - add element at the start of the array
+       a.unshift("hello")
+       console.log(a)
+
+       //4. shift - delete element at the start of the array
+       a.shift()
+       console.log(a)
+
+       //5. slice 
+      console.log(a.slice(0,-1))
+
+      //6. splice
+      a.splice(-5,4,false,"ayu")
+      console.log(a)
+
+      //7. map
+      let b = a.map((item)=> item+1)
+       console.log(b)
+
+       //8. filter - filter the data
+       let c = a.filter((item)=> item > 20)
+       console.log(c)
+
+       //9. reduce 
+       let d = a.reduce((x,y)=>x+y)
+       console.log(d)
+
+       //10. flat - convert 2d or 3d array into 1d array
+       let arr=[10,20,[1,2,[true,false],3,4,5],30,40,50]
+       console.log(arr.flat(2)) 
+
+       //11. split - convert string type into array and divide where particular symbol is present like(,-0)
+       let str = "10,20,30,40,50"
+       console.log(str.split(","))
+
+       //12. join - inverse of split
+       let arr1 = [10,20,30,40,50]
+       console.log(arr1.join(","))
+
+       //13.length
+       let len="advikasharma"
+       console.log(len.length)
+       console.log(len.toUpperCase())
+       console.log(len.toLowerCase())
+       console.log(len.repeat(2))
+       console.log(len.replace("a","s"))
+       console.log(len.replaceAll("sharma","parashar"))
+       console.log(len.charCodeAt("0"))
+       console.log(len.charCodeAt("6"))
+       console.log(len.includes("shar"))
+       console.log(len.includes("isk"))
+       
+    </script>
+</body>
+</html>
